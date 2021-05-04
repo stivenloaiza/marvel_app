@@ -28,9 +28,13 @@ final Color neutralAzulclaro = Color(0XFFC5E3F6);
 
 //TextStyles
 TextStyle titleBlanco = TextStyle(color: Colors.white, fontSize: 72, fontWeight: FontWeight.bold);
+TextStyle titleBlancoBIG = TextStyle(color: Colors.black.withOpacity(0.35), fontSize: 160, fontWeight: FontWeight.bold);
 TextStyle titlePequeBlanco = TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold);
+TextStyle titlePequeBlanco2 = TextStyle(color: Colors.white, fontSize: 36, fontWeight: FontWeight.bold);
 TextStyle subTitleBlanco = TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold);
 TextStyle bodyBlanco = TextStyle(color: neutralBlanco, fontSize: 18,);
+TextStyle bodyResalted = TextStyle(color: primaryMoradoclaro, fontSize: 18, fontWeight: FontWeight.bold, decoration: TextDecoration.underline );
+TextStyle bodyNoResalted = TextStyle(color: Colors.black, fontSize: 18, );
 TextStyle bodyAzulClaro = TextStyle(color: neutralAzulclaro, fontSize: 18,);
 TextStyle bodyBlancoPeque = TextStyle(color: Colors.white, fontSize: 15,);
 TextStyle bodyAzulPeque = TextStyle(color: neutralAzulclaro, fontSize: 15,);

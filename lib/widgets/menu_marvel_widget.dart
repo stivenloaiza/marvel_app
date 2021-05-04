@@ -5,9 +5,10 @@ class MenuMarvelWidget extends StatefulWidget {
   double hView;
   double wView;
   final Function clickMenuHamb;
+  final Function personajeSelected;
   GlobalKey<ScaffoldState> keyScaf;
 
-  MenuMarvelWidget({@required this.clickMenuHamb, @required this.keyScaf});
+  MenuMarvelWidget({@required this.clickMenuHamb, @required this.keyScaf, @required this.personajeSelected});
 
   @override
   _MenuMarvelWidgetState createState() => _MenuMarvelWidgetState();
@@ -59,6 +60,7 @@ class _MenuMarvelWidgetState extends State<MenuMarvelWidget> {
                     TextButton(
                       onPressed: (){
                         cg.indexMenuSelected=0;
+                        widget.personajeSelected();
                         setState(() {});
                       },
                       child: Text(cg.menus[0], textAlign:TextAlign.center,style: cg.indexMenuSelected==0?cg.menuSelected:cg.menuBlanco,),
@@ -66,6 +68,7 @@ class _MenuMarvelWidgetState extends State<MenuMarvelWidget> {
                     TextButton(
                       onPressed: (){
                         cg.indexMenuSelected=1;
+                        widget.personajeSelected();
                         setState(() {});
                       },
                       child: Text(cg.menus[1], textAlign:TextAlign.center,style: cg.indexMenuSelected==1?cg.menuSelected:cg.menuBlanco),
@@ -73,6 +76,7 @@ class _MenuMarvelWidgetState extends State<MenuMarvelWidget> {
                     TextButton(
                       onPressed: (){
                         cg.indexMenuSelected=2;
+                        widget.personajeSelected();
                         setState(() {});
                       },
                       child: Text(cg.menus[2], textAlign:TextAlign.center,style: cg.indexMenuSelected==2?cg.menuSelected:cg.menuBlanco),
@@ -80,6 +84,7 @@ class _MenuMarvelWidgetState extends State<MenuMarvelWidget> {
                     TextButton(
                       onPressed: (){
                         cg.indexMenuSelected=3;
+                        widget.personajeSelected();
                         setState(() {});
                       },
                       child: Text(cg.menus[3], textAlign:TextAlign.center,style: cg.indexMenuSelected==3?cg.menuSelected:cg.menuBlanco),
@@ -87,6 +92,7 @@ class _MenuMarvelWidgetState extends State<MenuMarvelWidget> {
                     TextButton(
                       onPressed: (){
                         cg.indexMenuSelected=4;
+                        widget.personajeSelected();
                         setState(() {});
                       },
                       child: Text(cg.menus[4], textAlign:TextAlign.center,style: cg.indexMenuSelected==4?cg.menuSelected:cg.menuBlanco),
@@ -94,6 +100,7 @@ class _MenuMarvelWidgetState extends State<MenuMarvelWidget> {
                     TextButton(
                       onPressed: (){
                         cg.indexMenuSelected=5;
+                        widget.personajeSelected();
                         setState(() {});
                       },
                       child: Text(cg.menus[5], textAlign:TextAlign.center,style: cg.indexMenuSelected==5?cg.menuSelected:cg.menuBlanco),
@@ -101,6 +108,7 @@ class _MenuMarvelWidgetState extends State<MenuMarvelWidget> {
                     TextButton(
                       onPressed: (){
                         cg.indexMenuSelected=6;
+                        widget.personajeSelected();
                         setState(() {});
                       },
                       child: Text(cg.menus[6], textAlign:TextAlign.center,style: cg.indexMenuSelected==6?cg.menuSelected:cg.menuBlanco),
